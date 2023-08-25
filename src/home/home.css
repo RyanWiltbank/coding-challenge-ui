@@ -1,0 +1,44 @@
+.region-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 40px;
+}
+
+.region-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 1px 4px 10px #666;
+  transition: transform 0.3s ease;
+}
+
+.region-card:hover {
+  transform: scale(1.05);
+}
+
+.region-card:active {
+  transform: scale(0.95);
+  background-color: #eee;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-info-values {
+  font-style: italic;
+}

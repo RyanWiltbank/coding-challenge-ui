@@ -1,0 +1,20 @@
+<template>
+  <require from="./app.css"></require>
+  <nav class="nav-bar">
+    <div class="nav-title">
+      <h1>${title}</h1>
+    </div>
+    <div class="nav-button-container">
+      <ul class="nav-buttons">
+        <li class="nav-button"><a href="/">Home</a></li>
+        <li class="nav-button"><a href="/region/pacific-islands">Pacific Islands</a></li>
+        <li class="nav-button"><a href="/region/greater-atlantic">Greater Atlantic</a></li>
+        <li class="nav-button"><a href="/region/west-coast">West Coast</a></li>
+        <li class="nav-button"><a href="/region/southeast">Southeast</a></li>
+        <li class="nav-button"><a href="/region/alaska">Alaska</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <router-view></router-view>
+</template>

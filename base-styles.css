@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  background-color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  margin: 0px;
+}

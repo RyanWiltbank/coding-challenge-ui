@@ -1,0 +1,25 @@
+<template>
+  <require from="./region-details.css"></require>
+
+  <div class="region-details-container">
+    <div class="region-info">
+      <h1 class="region-title">${regionInfo.name}</h1>
+      <div class="avg-container">
+        <span>Avg Cal: ${regionInfo.avgCal}</span>
+        <span>Avg Fat: ${regionInfo.avgFat}g</span>
+      </div>
+    </div>
+
+    <div class="fish-container">
+      <div class="fish-card" repeat.for="fish of fishInfo">
+        <img src="${fish.images[0].src}" alt="${fish.images[0].alt}">
+        <h2 class="fish-name">${fish.name}</h2>
+        <div class="avg-container">
+          <span>Cal: ${fish.calories}</span>
+          <span>Fat: ${fish.fat}g</span>
+        </div>
+        <span class="description">${fish.description}</span>
+      </div>
+    </div>
+  </div>
+</template>

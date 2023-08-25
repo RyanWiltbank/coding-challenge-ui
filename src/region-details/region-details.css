@@ -1,0 +1,61 @@
+.region-details-container {
+  padding: 20px;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(171deg, rgba(255, 255, 255, 1) 40%, rgba(168, 218, 197, 1) 94%, rgba(80, 180, 139, 1) 100%);
+}
+
+.region-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.region-title {
+  line-height: 0.8rem;
+  font-size: 60px;
+  font-style: italic;
+}
+
+.avg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.fish-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fish-card {
+  display: flex;
+  flex: 0 0 calc(33.33% - 20px);
+  flex-direction: column;
+  background-color: #f7f7f7;
+  max-width: 500px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 1px 4px 10px #666;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.fish-card:hover {
+  transform: scale(1.05)
+}
+
+.fish-name {
+  text-align: center;
+}
+
+.description {
+  padding: 15px 10px;
+  text-indent: 1rem;
+  text-overflow: scroll;
+}

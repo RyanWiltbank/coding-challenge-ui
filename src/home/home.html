@@ -1,0 +1,18 @@
+<template bindable="regions">
+  <require from="./home.css"></require>
+  <div class="region-card-container">
+    <div class="region-card" repeat.for="region of regions">
+      <a route.href="route: /region; params.bind: {region: region.name}">
+        <h2 class="card-title">${region.name}</h2>
+        <div class="card-info-row">
+          <span>Average Calories:</span>
+          <span class="card-info-values">${region.avgCal}</span>
+        </div>
+        <div class="card-info-row">
+          <span>Average Fat:</span>
+          <span class="card-info-values">${region.avgFat}g</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</template>
